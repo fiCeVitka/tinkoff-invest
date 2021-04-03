@@ -5,6 +5,7 @@ namespace TinkoffInvest;
 class Client
 {
     private $token;
+    private $requester;
     private $production;
     private $accountId;
 
@@ -12,6 +13,8 @@ class Client
     {
         $this->token = $token;
         $this->production = $production;
+
+        $this->requester = new Requester($token, $production);
     }
 
 
@@ -30,6 +33,18 @@ class Client
     public function getAccountId(): string
     {
         return $this->accountId;
+    }
+
+
+    public function getRequester(): Requester
+    {
+        return $this->requester;
+    }
+
+
+    public function user(): User
+    {
+        return new User($this->getRequester());
     }
 
 }

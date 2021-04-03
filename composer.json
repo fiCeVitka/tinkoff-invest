@@ -1,0 +1,15 @@
+{
+    "name": "ficevitka/tinkoff-invest",
+    "description": "Tinkoff invest PHP Api Client",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Viktor Laptev",
+            "email": "gmac.net.ru@gmail.com",
+            "homepage": "https://github.com/fiCeVitka"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
+}

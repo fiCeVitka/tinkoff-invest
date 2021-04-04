@@ -47,4 +47,10 @@ class Client
         return new User($this->getRequester());
     }
 
+
+    public function market(): Market
+    {
+        return new Market($this->getRequester());
+    }
+
 }
